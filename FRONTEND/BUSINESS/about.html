@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - RahulMotors</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(bg.jpg);
+            background-position: center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            height: 100vh;
+        }
+        header {
+            
+            padding: 15px 0;
+            color: #ff7200;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+        nav ul li {
+            position: relative;
+            list-style: none;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+        nav ul li a:hover {
+            color: #ff7200;
+        }
+        nav ul li::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0%;
+            height: 2px;
+            background: #ff7200;
+            transition: width 0.3s ease-in-out;
+        }
+        nav ul li:hover::after {
+            width: 100%;
+        }
+        .about {
+            width: 80%;
+            margin: 50px auto;
+            padding: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .about:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            
+        }
+        .about h2 {
+            color: #ff7200;
+        }
+        .about ul {
+            text-align: left;
+            display: inline-block;
+        }
+        footer {
+            /* background: #222; */
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About RAHUL MOTORS</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="categories.html">categories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="about">
+        <h2>Who We Are</h2>
+        <p>Rahul Motors is a premium car dealership offering the best selection of luxury and sports cars at unbeatable prices.</p>
+        
+        <h2>Our Mission</h2>
+        <p>Our mission is to provide high-quality vehicles while ensuring customer satisfaction and a seamless car-buying experience.</p>
+        
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>Wide selection of top-brand cars</li>
+            <li>Competitive pricing</li>
+            <li>Exceptional customer service</li>
+            <li>Flexible financing options</li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Rahul Motors. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CATEGORIES</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: linear-gradient(45deg, #6a11cb, #2575fc);
+
+        background-image: url("bg.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+      }
+
+      .category {
+        background: rgba(255, 255, 255, 0.7);
+        padding: 15px 30px;
+        margin: 10px 0;
+        border-radius: 8px;
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+        transition: all 0.22s ease-in-out;
+        cursor: pointer;
+        font-size: 24px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 250px;
+        overflow: hidden;
+        position: relative;
+        /* opacity: 0.9; */
+      }
+
+      .category:hover {
+        background: rgba(255, 255, 255, 1);
+        transform: scale(1.1);
+        box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.3);
+        background: linear-gradient(45deg, #746c6b, #b9b1b5);
+        color: white;
+        width: 400px;
+      }
+
+      .category img {
+        width: 0;
+        height: 80px;
+        border-radius: 8px;
+        transition: width 0.3s ease-in-out;
+        margin-left: 15px;
+      }
+
+      .category:hover img {
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://rahulsmotors.com/">
+      <div class="category">
+        CAR STOCK
+        <img src="car_sh.jpeg" alt="CAR_STOCK" />
+      </div>
+    </a>
+    <a href="accessories.html">
+      <div class="category">
+        CAR ACCESSORIES
+        <img src="accessories.jpeg" alt="CAR_ACCESSORIES" />
+      </div>
+    </a>
+    <a href="tyres.html">
+      <div class="category">
+        TYRES
+        <img src="tyres.jpg" alt="tyres" />
+      </div>
+    </a>
+    <!-- <div class="category">
+      Green Energy
+      <img src="https://source.unsplash.com/100x80/?solar" alt="Green Energy" />
+    </div> -->
+  </body>
+</html>

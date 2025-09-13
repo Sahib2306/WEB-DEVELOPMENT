@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>
+            LOGIN
+
+        </title>
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        
+  
+    <div class="form">
+    <h2>Login Here</h2>
+    <input type="email" name="email" placeholder="Enter Email Here">
+    <input type="password" name="" placeholder="Enter Password Here">
+    <span toggle="#password" class="toggle-password">👁️</span>
+    <button class="btnn"><a href="front.html">Login</a></button>
+
+    <p class="link">Don't have an account<br>
+    <a href="#">Sign up </a> here</a></p>
+    <p class="liw">Log in with</p>
+
+    <div class="icons">
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="https://www.instagram.com/rahul_motors76/"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="https://rahulsmotors.com/"><ion-icon name="logo-google"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+    </div>
+
+</div>
+    </div>
+</div>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js">
+document.querySelector(".toggle-password").addEventListener("click", function() {
+    const passwordField = document.querySelector(this.getAttribute("toggle"));
+    if (passwordField.type === "password") {
+        passwordField.type = "text";
+    } else {
+        passwordField.type = "password";
+    }
+});
+
+</script>
+</body>
+</html>
